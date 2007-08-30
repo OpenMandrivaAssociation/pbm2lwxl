@@ -1,7 +1,7 @@
 Summary:	A driver for the CoStar Labelwriter XL
 Name:		pbm2lwxl
 Version:	0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Printing
 URL:		http://www.freelabs.com/~whitis/software/pbm2lwxl
@@ -9,8 +9,8 @@ Source0:	http://www.freelabs.com/~whitis/software/pbm2lwxl/pbm2lwxl.tar.gz
 Patch0:		pbm2lwxl-20040515-path.patch
 Requires:	mpage
 Requires:	ghostscript
-Conflicts:	printer-utils-2006 printer-utils-2007
-Conflicts:	printer-filters-2006 printer-filters-2007
+Conflicts:	printer-utils = 2007
+Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
