@@ -11,7 +11,6 @@ Requires:	mpage
 Requires:	ghostscript
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 A driver for the CoStar printers:
