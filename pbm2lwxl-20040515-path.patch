@@ -1,0 +1,25 @@
+--- pbm2lwxl-1/small2lwxl.path	2004-05-15 11:36:04.799466232 -0300
++++ pbm2lwxl-1/small2lwxl	2004-05-15 11:38:10.543350256 -0300
+@@ -1,3 +1,3 @@
+ #!/bin/bash
+ # good for 6 lines of 29 characters
+-mpage -1 -o -m720t0lrb -L12 | /usr/local/bin/ps2lwxl
++mpage -1 -o -m720t0lrb -L12 | /usr/bin/ps2lwxl
+--- pbm2lwxl-1/ps2lwxl.path	2004-05-15 11:35:58.000000000 -0300
++++ pbm2lwxl-1/ps2lwxl	2004-05-15 11:38:07.669787104 -0300
+@@ -8,6 +8,6 @@
+ echo "WIDTH=$WIDTH" >&2
+ echo "HEIGHT=HEIGHT" >&2
+ 
+-#ghostscript -sDEVICE=pbm -sOutputFile=- -q -dNOPAUSE -r192x192 -g700x192 -dSAFER - -c quit | pnmflip -cw | pnmnoraw | /usr/local/bin/pbm2lwxl $1 $2
+-ghostscript -sDEVICE=pbm -sOutputFile=- -q -dNOPAUSE -r${DPI}x${DPI} -g${HEIGHT}x${WIDTH} -dSAFER - -c quit | pnmflip -cw | pnmnoraw | /usr/local/bin/pbm2lwxl $WIDTH $HEIGHT
++#ghostscript -sDEVICE=pbm -sOutputFile=- -q -dNOPAUSE -r192x192 -g700x192 -dSAFER - -c quit | pnmflip -cw | pnmnoraw | /usr/bin/pbm2lwxl $1 $2
++ghostscript -sDEVICE=pbm -sOutputFile=- -q -dNOPAUSE -r${DPI}x${DPI} -g${HEIGHT}x${WIDTH} -dSAFER - -c quit | pnmflip -cw | pnmnoraw | /usr/bin/pbm2lwxl $WIDTH $HEIGHT
+ 
+--- pbm2lwxl-1/txt2lwxl.path	2004-05-15 11:36:11.913384752 -0300
++++ pbm2lwxl-1/txt2lwxl	2004-05-15 11:38:14.897688296 -0300
+@@ -1,3 +1,3 @@
+ #!/bin/bash
+ # good for 6 lines of 29 characters
+-mpage -1 -o -m720t0lrb -L6 | /usr/local/bin/ps2lwxl
++mpage -1 -o -m720t0lrb -L6 | /usr/bin/ps2lwxl
