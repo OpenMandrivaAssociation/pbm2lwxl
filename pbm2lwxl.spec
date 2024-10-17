@@ -4,7 +4,7 @@ Version:	0
 Release:	23
 License:	GPL
 Group:		System/Printing
-Url:		http://www.freelabs.com/~whitis/software/pbm2lwxl
+Url:		https://www.freelabs.com/~whitis/software/pbm2lwxl
 Source0:	http://www.freelabs.com/~whitis/software/pbm2lwxl/pbm2lwxl.tar.gz
 Patch0:		pbm2lwxl-20040515-path.patch
 Patch1:		pbm2lwxl-LDFLAGS.diff
