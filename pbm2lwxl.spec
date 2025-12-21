@@ -11,6 +11,7 @@ Patch1:		pbm2lwxl-LDFLAGS.diff
 Requires:	mpage
 Requires:	ghostscript
 
+BuildRequires:	make
 %description
 A driver for the CoStar printers:
  o LabelWriter II
